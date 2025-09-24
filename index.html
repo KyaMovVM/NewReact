@@ -1,12 +1,14 @@
-<html lang="en">
-  <head> </head>
+<html>
   <body>
-    <script>
-      // create a couple of elements in an otherwise empty HTML page
-      const heading = document.createElement("h1");
-      const headingText = document.createTextNode("Big Head!");
-      heading.appendChild(headingText);
-      document.body.appendChild(heading);
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel Script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const domNode = document.getElementById('app');
+      const root = ReactDOM.createRoot(domNode);
+      root.render(<h1>Develop. Preview. Ship.</h1>);
     </script>
   </body>
 </html>

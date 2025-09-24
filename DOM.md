@@ -1,3 +1,7 @@
+dom spec
+https://dom.spec.whatwg.org/
+https://www.w3.org/TR/selectors-3/
+
 Дополнительные ресурсы:
 
 Введение в DOM https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction

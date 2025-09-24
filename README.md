@@ -1,7 +1,11 @@
 # NewReact
 NewRestart
 
-Пробую вкатиться в React заново. Начну с основ.
+JSX Compiler
+https://babeljs.io/
+
+JSX rules
+https://react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx
 
 Сначала нужно установить NPM и Node JS.
 
@@ -30,3 +34,27 @@ v24.4.1
 
 
 Примечание: Поскольку подавляющее большинство кода, использующего DOM, связано с манипулированием HTML-документами, узлы в DOM принято называть элементами , хотя, строго говоря, не каждый узел является элементом.
+
+https://react.dev/learn/understanding-your-ui-as-a-tree
+
+https://react.dev/learn/writing-markup-with-jsx
+
+https://react.dev/reference/react-dom/server
+
+https://developer.mozilla.org/en-US/docs/Web/API/Streams_API
+
+https://nextjs.org/learn/react-foundations/getting-started-with-react
+
+Базовый JavaScript для React
+Хотя вы можете изучать JavaScript и React одновременно, знакомство с JavaScript может облегчить процесс изучения React.
+
+Вот краткий обзор тем JavaScript, которые будут затронуты:
+
+Функциии стрелочные функции
+Объекты
+Массивы и методы массивов
+Деструктуризация
+Шаблонные литералы
+Тернарные операторы
+Модули ES и синтаксис импорта/экспорта
+Хотя этот курс не углублялся в JavaScript, полезно быть в курсе последних версий JavaScript. Но если вы пока не чувствуете себя профессионалом в JavaScript, не позволяйте этому помешать вам начать разрабатывать на React!
