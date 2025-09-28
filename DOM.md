@@ -2,6 +2,15 @@ dom spec
 https://dom.spec.whatwg.org/
 https://www.w3.org/TR/selectors-3/
 
+CSSOM
+https://developer.mozilla.org/ru/docs/Web/API/CSS_Object_Model
+https://developer.chrome.com/docs/css-ui/cssom?hl=ru
+https://www.w3.org/TR/2021/WD-cssom-1-20210826/
+
+CSS_Typed_OM_API
+https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API/Guide
+https://developer.chrome.com/docs/css-ui/cssom?hl=ru
+
 Дополнительные ресурсы:
 
 Введение в DOM https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
