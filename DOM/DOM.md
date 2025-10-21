@@ -1,6 +1,17 @@
+library
+https://lit.dev/
+https://lit.dev/tutorials/intro-to-lit/
+
 dom spec
 https://dom.spec.whatwg.org/
 https://www.w3.org/TR/selectors-3/
+
+crazy
+https://www.w3.org/TR/SVG/conform.html#features
+
+shadow-dom
+https://www.youtube.com/watch?v=Is4FZxKGqqk&t=2s
+https://www.w3.org/TR/shadow-dom/
 
 CSSOM устарел
 https://developer.mozilla.org/ru/docs/Web/API/CSS_Object_Model
@@ -8,11 +19,14 @@ https://developer.chrome.com/docs/css-ui/cssom?hl=ru
 https://www.w3.org/TR/2021/WD-cssom-1-20210826/
 
 CSS_Typed_OM_API
+https://developer.mozilla.org/en-US/docs/Web/API/Element/computedStyleMap
 https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API/Guide
 https://developer.chrome.com/docs/css-ui/cssom?hl=ru
 https://drafts.css-houdini.org/css-typed-om/
 
 Дополнительные ресурсы:
+
+https://www.qed42.com/insights/web-components-introduction-to-the-future-web
 
 Введение в DOM https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 Как просмотреть DOM в Google Chrome https://developer.chrome.com/docs/devtools/dom/
@@ -41,3 +55,8 @@ NodeList	A nodeList— это массив элементов, аналогич�
 Attr	Когда элемент attribute(например, метод) возвращает объект createAttribute(), это ссылка на объект, предоставляющая специальный (хотя и небольшой) интерфейс для атрибутов. Атрибуты — это узлы в DOM, как и элементы, хотя вы можете редко использовать их в этом качестве.
 
 NamedNodeMap	A namedNodeMapпохож на массив, но доступ к элементам осуществляется по имени или индексу, хотя последний случай служит лишь удобством перечисления, поскольку они не имеют определённого порядка в списке. В A namedNodeMapесть item()метод для этой цели, и вы также можете добавлять и удалять элементы из namedNodeMap.
+
+https://ecma-international.org/publications-and-standards/standards/ecma-262/
+
+https://dom.spec.whatwg.org/#event
+

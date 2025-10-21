@@ -1,5 +1,5 @@
 # NewReact
-NewRestart
+React Component → Virtual DOM → Reconciliation → Real DOM (Light DOM)
 
 JSX Compiler
 https://babeljs.io/
@@ -45,6 +45,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Streams_API
 
 https://nextjs.org/learn/react-foundations/getting-started-with-react
 
+
+
 Базовый JavaScript для React
 Хотя вы можете изучать JavaScript и React одновременно, знакомство с JavaScript может облегчить процесс изучения React.
 
@@ -58,3 +60,83 @@ https://nextjs.org/learn/react-foundations/getting-started-with-react
 Тернарные операторы
 Модули ES и синтаксис импорта/экспорта
 Хотя этот курс не углублялся в JavaScript, полезно быть в курсе последних версий JavaScript. Но если вы пока не чувствуете себя профессионалом в JavaScript, не позволяйте этому помешать вам начать разрабатывать на React!
+
+# Virtual DOM
+
+React создаёт виртуальное представление DOM в памяти (JavaScript объекты)
+При изменении состояния → новый Virtual DOM
+Diffing алгоритм сравнивает старый и новый VDOM
+Применяются только необходимые изменения к реальному DOM
+
+Когда React использует Shadow DOM?
+React поддерживает Shadow DOM через специальные атрибуты в React 16+:
+
+``` jsx
+    1. mode="open"
+    function MyComponent() {
+    return (
+        <div>
+        <h1>Обычный контент</h1>
+        <custom-element mode="open">
+            <p>Контент в Shadow DOM</p>
+        </custom-element>
+        </div>
+    );
+    }
+    2. Web Components
+    jsxc
+    lass MyWebComponent extends HTMLElement {
+    constructor() {
+        super();
+        const shadow = this.attachShadow({ mode: 'open' });
+        shadow.innerHTML = '<p>Shadow контент</p>';
+    }
+    }
+
+    customElements.define('my-web-component', MyWebComponent);
+
+
+    Практические примеры
+    Без Shadow DOM (по умолчанию)
+    jsx
+    
+    const App = () => (
+    <div className="app">
+        <Header />
+        <Main />
+        <Footer />
+    </div>
+    );
+    // DOM: обычное дерево элементов
+    С Shadow DOM (явно)
+
+    jsx
+    
+    const App = () => (
+    <div>
+        <style>{`
+        :host { display: block; }
+        #shadow-content { color: red; }
+        `}</style>
+        <div mode="open" id="shadow-root">
+        <Header />
+        <Main />
+        </div>
+    </div>
+    );
+
+```
+
+Рекомендации
+Используйте Virtual DOM (по умолчанию) когда:
+
+Простое приложение
+Не нужна строгая изоляция стилей
+Команда не знакома с Shadow DOM
+
+Используйте Shadow DOM когда:
+
+Создаёте библиотеку компонентов
+Нужна полная изоляция стилей
+Разрабатываете Web Components
+Большое приложение с множеством стилей
