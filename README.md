@@ -140,3 +140,7 @@ React поддерживает Shadow DOM через специальные ат
 Нужна полная изоляция стилей
 Разрабатываете Web Components
 Большое приложение с множеством стилей
+
+# Gemini CLI
+
+https://www.youtube.com/watch?v=zEMXCoqJodE
