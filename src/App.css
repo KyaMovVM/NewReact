@@ -1,0 +1,38 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+}
+
+.app-main {
+    padding: 20px;
+}
+
+.app-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.primary-button {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.primary-button:hover {
+    background-color: #21a1f1;
+}

@@ -9,7 +9,7 @@ class AppDrawer extends HTMLElement {
 
 // Регистрируем наш новый кастомный элемент с именем 'app-drawer'.
 // Теперь в HTML можно использовать тег <app-drawer></app-drawer>.
-window.customElements.define('app-drawer', AppDrawer);
+globalThis.customElements.define('app-drawer', AppDrawer);
 
 // Чтобы увидеть результат, создайте HTML-файл и добавьте в него:
 // <script src="custom.js"></script>

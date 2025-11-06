@@ -2,15 +2,12 @@
 
 // Компоненты React — это функции JavaScript, которые возвращают разметку:
 
+import React from 'react';
+import './App.css';
+
 function MyButton() {
     return (
-        <button>I'm a button</button>
-    );
-}
-
-function MySuperButton() {
-    return (
-        <button>I'm a SUPER button</button>
+        <button className="primary-button">I&#39;m a button</button>
     );
 }
 
@@ -21,11 +18,18 @@ function MySuperButton() {
 
 export default function MyApp() {
     return (
-        <div>
-            <h1>Welcome to my app</h1>
-            <MyButton />
+        <div className="app-container">
+            <header className="app-header">
+                <h1>Welcome to my updated app</h1>
+            </header>
+            <main className="app-main">
+                <MyButton />
+            </main>
+            <footer className="app-footer">
+                <p>© 2025 My React App</p>
+            </footer>
         </div>
-    )
+    );
 }
 
 // JSX строже HTML.
@@ -39,5 +43,3 @@ export default function MyApp() {
 // Добавление стилей
 // В React CSS-класс указывается с помощью className.
 // Он работает так же, как и HTML- class атрибут:
-
-<img className="avatar" />

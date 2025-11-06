@@ -36,7 +36,7 @@ class AppDrawer2 extends HTMLElement {
     super();
 
     // Setup a click listener on <app-drawer> itself.
-    this.addEventListener('click', e => {
+  this.addEventListener('click', () => {
       // Don't toggle the drawer if it's disabled.
       if (this.disabled) {
         return;

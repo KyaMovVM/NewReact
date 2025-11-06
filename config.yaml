@@ -1,0 +1,22 @@
+rules:
+  - name: code-review
+    description: Review code following team standards
+    rule: Review following our TypeScript style guide and security practices
+    context:
+      - docs/style-guide.md
+      - security-checklist.md
+  - name: readme-review
+    description: Ensure README contains required sections and badges
+    rule: Verify that README.md includes badges, installation, usage, contribution, contact, license and references
+    context:
+      - README.md
+  - name: ci-status
+    description: Verify that GitHub Actions workflow is present and passes
+    rule: Check .github/workflows/ci.yml for success status
+    context:
+      - .github/workflows/ci.yml
+  - name: license-check
+    description: Ensure license file exists and matches repository license
+    rule: Verify LICENSE file contains MIT license text
+    context:
+      - LICENSE
